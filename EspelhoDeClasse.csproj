@@ -94,29 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\estilo.css" />
-    <Content Include="Content\images\fotos-2016-1\Alana Stank.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Alice Abreu.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Allan Matheus.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Alycio Neto.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Andrews Kuhn.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Arthur Cabral.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Calvin Gerling.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Davi Spindola.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Diuly Barreto.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Douglas Ballester.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Erico Loewe.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Fernando Leandro.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Gustavo Melloti.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Hedo Junior.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Leon Menger.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Lucas Lentz.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Marcelo Warth.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Mauricio Scherer.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Michel Fernandes.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Murillo Peteffi.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Victor Comette.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Vinicius Ambrosi.jpg" />
-    <Content Include="Content\images\fotos-2016-1\Vinicius Audibert.jpg" />
     <Content Include="Content\images\fotos-2016-2\Anna Luisa de Oliveira.jpg" />
     <Content Include="Content\images\fotos-2016-2\Arthur Lima de Souza.jpg" />
     <Content Include="Content\images\fotos-2016-2\Cássio Farias Machado.jpg" />
@@ -167,12 +144,6 @@
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
