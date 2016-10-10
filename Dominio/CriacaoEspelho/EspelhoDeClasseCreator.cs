@@ -12,13 +12,13 @@ namespace EspelhoDeClasse.Dominio
         {
             var historico = new Historico(alunos, historicoDeEspelhos);
 
-            var espelhosEmbaralhados = GeraEspelhosEmbaralhados(alunos, 20000);
+            var espelhosEmbaralhados = GeraEspelhosEmbaralhados(alunos, 30000);
 
             var espelhosQueAtendemFiltro = FiltraEspelhosQueNaoAtendemCasosEspeciais(espelhosEmbaralhados, filtroCasosEspeciais);
             var espelhosOrdenadosPorMelhorScore = OrdenarEspelhosPorScore(historico, espelhosQueAtendemFiltro);
 
             //gambiarra: adiciona no final o historico antigo a mérito de comparação
-            espelhosOrdenadosPorMelhorScore.Add(new Espelho(historico.historicoVizinhos, new string[] { "Histórico antigo" }));
+            //espelhosOrdenadosPorMelhorScore.Add(new Espelho(historico.historicoVizinhos, new string[] { "Histórico antigo" }));
 
             return espelhosOrdenadosPorMelhorScore;
         }
