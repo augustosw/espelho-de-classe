@@ -41,15 +41,19 @@ namespace EspelhoDeClasse.Controllers
             };
 
             var listaEspelhosPassados = new List<string[]>();
-            
+
             // 03/10 segunda semana OO
             listaEspelhosPassados.Add(new string[] { "Rafael Henrique da Silva", "Régis Martiny", "Jeniffer da Silva Costa", "Jonathan William Silva dos Santos", "Gabriel Ferreira da Rosa", "Henrique Mentz", "Pablo da Luz Schlusen", "Rodrigo Scheuer", "Gabriel Dias Henz", "Matheus Augusto Schmitz", "Felipe Thomas Vargas de Souza", "Douglas de Freitas", "Otávio Fabrin Bubans", "Máicon Träsel Loebens", "Cássio Farias Machado", "Henrique Honaiser Ostermamm", "Daniel de Carvalho Figueiredo", "Victor Oliveira", "Mateus Ramos", "Eduardo Dornel Ribas", "Arthur Lima de Souza", "Anna Luisa de Oliveira", "Leonardo Gabriel Grasel de Almeida", "Eliseu José Daroit Júnior", "Mateus Bueno dos Passos Teixeira" });
             // 10/10 sql server            
             listaEspelhosPassados.Add(new string[] { "Daniel de Carvalho Figueiredo", "Gabriel Ferreira da Rosa", "Jeniffer da Silva Costa", "Felipe Thomas Vargas de Souza", "Gabriel Dias Henz", "Mateus Ramos", "Máicon Träsel Loebens", "Eduardo Dornel Ribas", "Leonardo Gabriel Grasel de Almeida", "Henrique Honaiser Ostermamm", "Matheus Augusto Schmitz", "Arthur Lima de Souza", "Anna Luisa de Oliveira", "Régis Martiny", "Otávio Fabrin Bubans", "Mateus Bueno dos Passos Teixeira", "Victor Oliveira", "Douglas de Freitas", "Rodrigo Scheuer", "Eliseu José Daroit Júnior", "Cássio Farias Machado", "Henrique Mentz", "Pablo da Luz Schlusen", "Rafael Henrique da Silva", "Jonathan William Silva dos Santos" });
             // 17/10 sql server            
             listaEspelhosPassados.Add(new string[] { "Eliseu José Daroit Júnior", "Rafael Henrique da Silva", "Jeniffer da Silva Costa", "Victor Oliveira", "Máicon Träsel Loebens", "Gabriel Ferreira da Rosa", "Anna Luisa de Oliveira", "Matheus Augusto Schmitz", "Otávio Fabrin Bubans", "Leonardo Gabriel Grasel de Almeida", "Henrique Mentz", "Daniel de Carvalho Figueiredo", "Mateus Ramos", "Rodrigo Scheuer", "Cássio Farias Machado", "Pablo da Luz Schlusen", "Felipe Thomas Vargas de Souza", "Jonathan William Silva dos Santos", "Régis Martiny", "Gabriel Dias Henz", "Eduardo Dornel Ribas", "Mateus Bueno dos Passos Teixeira", "Douglas de Freitas", "Arthur Lima de Souza", "Henrique Honaiser Ostermamm" });
+            //19/10 html e css
+            listaEspelhosPassados.Add(new string[] { "Gabriel Ferreira da Rosa", "Matheus Augusto Schmitz", "Mateus Bueno dos Passos Teixeira", "Máicon Träsel Loebens", "Felipe Thomas Vargas de Souza", "Jeniffer da Silva Costa", "Otávio Fabrin Bubans", "Cássio Farias Machado", "Leonardo Gabriel Grasel de Almeida", "Gabriel Dias Henz", "Daniel de Carvalho Figueiredo", "Eliseu José Daroit Júnior", "Henrique Mentz", "Rafael Henrique da Silva", "Victor Oliveira", "Pablo da Luz Schlusen", "Arthur Lima de Souza", "Jonathan William Silva dos Santos", "Anna Luisa de Oliveira", "Mateus Ramos", "Régis Martiny", "Douglas de Freitas", "Henrique Honaiser Ostermamm", "Rodrigo Scheuer", "Eduardo Dornel Ribas" });
+            //26/10 javascript 
+            listaEspelhosPassados.Add(new string[] { "Gabriel Ferreira da Rosa", "Henrique Honaiser Ostermamm", "Henrique Mentz", "Otávio Fabrin Bubans", "Anna Luisa de Oliveira", "Jeniffer da Silva Costa", "Gabriel Dias Henz", "Leonardo Gabriel Grasel de Almeida", "Mateus Bueno dos Passos Teixeira", "Felipe Thomas Vargas de Souza", "Eduardo Dornel Ribas", "Pablo da Luz Schlusen", "Matheus Augusto Schmitz", "Victor Oliveira", "Régis Martiny", "Rodrigo Scheuer", "Douglas de Freitas", "Rafael Henrique da Silva", "Arthur Lima de Souza", "Máicon Träsel Loebens", "Eliseu José Daroit Júnior", "Mateus Ramos", "Cássio Farias Machado", "Jonathan William Silva dos Santos", "Daniel de Carvalho Figueiredo" });
 
-        var espelhoCreator = new EspelhoDeClasseCreator();
+            var espelhoCreator = new EspelhoDeClasseCreator();
             var melhoresEspelhos = espelhoCreator.ObterMelhoresEspelhos(alunos, listaEspelhosPassados, FiltroCasosEspeciais);
 
             return View(melhoresEspelhos);

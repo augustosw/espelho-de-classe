@@ -35,11 +35,11 @@ namespace EspelhoDeClasse.Dominio
         /// </summary>
         public Dictionary<string, List<Vizinho>> ObterHistoricoProjetadoComNovoEmbaralhamento(string[] alunosEmbaralhados)
         {
-            var historicoProjetado = historicoVizinhos.Clone();
+            var historicoAntigo = historicoVizinhos.Clone();
 
-            PopulaDictionaryHistoricos(alunosEmbaralhados, historicoProjetado);
+            PopulaDictionaryHistoricos(alunosEmbaralhados, historicoAntigo);
 
-            return historicoProjetado;
+            return historicoAntigo;
         }
 
         private void PopulaDictionaryHistoricos(string[] alunos, Dictionary<string, List<Vizinho>> historicoCópia = null)
