@@ -126,6 +126,7 @@
     <Content Include="Content\images\fundos\power-rangers.png" />
     <Content Include="Content\images\fundos\river-raid-4.jpg" />
     <Content Include="Content\images\fundos\rock-n-roll-racing.jpg" />
+    <Content Include="Content\images\fundos\top-guear.jpg" />
     <Content Include="Content\images\fundos\turtle-ninjas.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
