@@ -72,5 +72,5 @@
 
     .ultima-fileira .posicao.aluno {
         display: inline-block;
-        /*float: none;*/
+        float: none;
     }

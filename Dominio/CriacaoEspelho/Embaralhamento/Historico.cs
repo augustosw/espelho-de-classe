@@ -12,7 +12,12 @@ namespace EspelhoDeClasse.Dominio
 
         public Historico(string[]  alunos, List<string[]> listaEspelhosRetroativos)
         {
-            InicializaDictionaryHistoricos(alunos);
+            //Monta a lista com o primeiro espelho (que tinha todos alunos) 
+            //ou com o array de alunos passado caso seja o primeiro
+            //Fazemos isso pois o array de alunos pode perder itens no futuro
+            var listaTodosAlunosExistentes = listaEspelhosRetroativos.First() ?? alunos;
+
+            InicializaDictionaryHistoricos(listaTodosAlunosExistentes);
 
             foreach (var espelho in listaEspelhosRetroativos)
             {

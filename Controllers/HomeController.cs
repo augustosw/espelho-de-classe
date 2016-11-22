@@ -17,7 +17,7 @@ namespace EspelhoDeClasse.Controllers
                 "Arthur Lima de Souza",
                 "Cássio Farias Machado",
                 "Daniel de Carvalho Figueiredo",
-                "Douglas de Freitas",
+                //"Douglas de Freitas",
                 "Eduardo Dornel Ribas",
                 "Eliseu José Daroit Júnior",
                 "Felipe Thomas Vargas de Souza",
@@ -53,7 +53,9 @@ namespace EspelhoDeClasse.Controllers
             //26/10 javascript 
             listaEspelhosPassados.Add(new string[] { "Gabriel Ferreira da Rosa", "Henrique Honaiser Ostermamm", "Henrique Mentz", "Otávio Fabrin Bubans", "Anna Luisa de Oliveira", "Jeniffer da Silva Costa", "Gabriel Dias Henz", "Leonardo Gabriel Grasel de Almeida", "Mateus Bueno dos Passos Teixeira", "Felipe Thomas Vargas de Souza", "Eduardo Dornel Ribas", "Pablo da Luz Schlusen", "Matheus Augusto Schmitz", "Victor Oliveira", "Régis Martiny", "Rodrigo Scheuer", "Douglas de Freitas", "Rafael Henrique da Silva", "Arthur Lima de Souza", "Máicon Träsel Loebens", "Eliseu José Daroit Júnior", "Mateus Ramos", "Cássio Farias Machado", "Jonathan William Silva dos Santos", "Daniel de Carvalho Figueiredo" });
             //07/11 .net
-            listaEspelhosPassados.Add(new string[] { "Gabriel Ferreira da Rosa", "Cássio Farias Machado", "Douglas de Freitas", "Leonardo Gabriel Grasel de Almeida", "Jeniffer da Silva Costa", "Mateus Bueno dos Passos Teixeira", "Pablo da Luz Schlusen", "Henrique Honaiser Ostermamm", "Máicon Träsel Loebens", "Henrique Mentz", "Arthur Lima de Souza", "Eliseu José Daroit Júnior", "Matheus Augusto Schmitz", "Daniel de Carvalho Figueiredo", "Eduardo Dornel Ribas", "Victor Oliveira", "Gabriel Dias Henz", "Anna Luisa de Oliveira", "Régis Martiny", "Rodrigo Scheuer", "Otávio Fabrin Bubans", "Rafael Henrique da Silva", "Felipe Thomas Vargas de Souza", "Mateus Ramos", "Jonathan William Silva dos Santos" };
+            listaEspelhosPassados.Add(new string[] { "Gabriel Ferreira da Rosa", "Cássio Farias Machado", "Douglas de Freitas", "Leonardo Gabriel Grasel de Almeida", "Jeniffer da Silva Costa", "Mateus Bueno dos Passos Teixeira", "Pablo da Luz Schlusen", "Henrique Honaiser Ostermamm", "Máicon Träsel Loebens", "Henrique Mentz", "Arthur Lima de Souza", "Eliseu José Daroit Júnior", "Matheus Augusto Schmitz", "Daniel de Carvalho Figueiredo", "Eduardo Dornel Ribas", "Victor Oliveira", "Gabriel Dias Henz", "Anna Luisa de Oliveira", "Régis Martiny", "Rodrigo Scheuer", "Otávio Fabrin Bubans", "Rafael Henrique da Silva", "Felipe Thomas Vargas de Souza", "Mateus Ramos", "Jonathan William Silva dos Santos" });
+            //22/11 reforço .net
+            listaEspelhosPassados.Add(new string[] { "Jeniffer da Silva Costa", "Mateus Ramos", "Gabriel Ferreira da Rosa", "Gabriel Dias Henz", "Rafael Henrique da Silva", "Leonardo Gabriel Grasel de Almeida", "Régis Martiny", "Jonathan William Silva dos Santos", "Máicon Träsel Loebens", "Anna Luisa de Oliveira", "Rodrigo Scheuer", "Henrique Honaiser Ostermamm", "Mateus Bueno dos Passos Teixeira", "Pablo da Luz Schlusen", "Otávio Fabrin Bubans", "Eduardo Dornel Ribas", "Matheus Augusto Schmitz", "Eliseu José Daroit Júnior", "Arthur Lima de Souza", "Daniel de Carvalho Figueiredo", "Felipe Thomas Vargas de Souza", "Cássio Farias Machado", "Victor Oliveira", "Henrique Mentz" });
 
             var espelhoCreator = new EspelhoDeClasseCreator();
             var melhoresEspelhos = espelhoCreator.ObterMelhoresEspelhos(alunos, listaEspelhosPassados, FiltroCasosEspeciais);
