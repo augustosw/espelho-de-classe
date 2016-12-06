@@ -25,7 +25,7 @@ namespace EspelhoDeClasse.Controllers
                 "Gabriel Ferreira da Rosa",
                 "Henrique Honaiser Ostermamm",
                 "Henrique Mentz",
-                "Jeniffer da Silva Costa",
+                //"Jeniffer da Silva Costa",
                 "Jonathan William Silva dos Santos",
                 "Leonardo Gabriel Grasel de Almeida",
                 "Mateus Bueno dos Passos Teixeira",
@@ -58,6 +58,10 @@ namespace EspelhoDeClasse.Controllers
             listaEspelhosPassados.Add(new string[] { "Jeniffer da Silva Costa", "Mateus Ramos", "Gabriel Ferreira da Rosa", "Gabriel Dias Henz", "Rafael Henrique da Silva", "Leonardo Gabriel Grasel de Almeida", "Régis Martiny", "Jonathan William Silva dos Santos", "Máicon Träsel Loebens", "Anna Luisa de Oliveira", "Rodrigo Scheuer", "Henrique Honaiser Ostermamm", "Mateus Bueno dos Passos Teixeira", "Pablo da Luz Schlusen", "Otávio Fabrin Bubans", "Eduardo Dornel Ribas", "Matheus Augusto Schmitz", "Eliseu José Daroit Júnior", "Arthur Lima de Souza", "Daniel de Carvalho Figueiredo", "Felipe Thomas Vargas de Souza", "Cássio Farias Machado", "Victor Oliveira", "Henrique Mentz" });
             //28/11 java
             listaEspelhosPassados.Add(new string[] { "Arthur Lima de Souza", "Jeniffer da Silva Costa", "Máicon Träsel Loebens", "Gabriel Ferreira da Rosa", "Gabriel Dias Henz", "Henrique Honaiser Ostermamm", "Anna Luisa de Oliveira", "Pablo da Luz Schlusen", "Leonardo Gabriel Grasel de Almeida", "Felipe Thomas Vargas de Souza", "Otávio Fabrin Bubans", "Henrique Mentz", "Mateus Ramos", "Victor Oliveira", "Rodrigo Scheuer", "Eliseu José Daroit Júnior", "Daniel de Carvalho Figueiredo", "Régis Martiny", "Eduardo Dornel Ribas", "Rafael Henrique da Silva", "Jonathan William Silva dos Santos", "Matheus Augusto Schmitz", "Cássio Farias Machado", "Mateus Bueno dos Passos Teixeira" });
+            //06/12 java
+            listaEspelhosPassados.Add(new string[] { "Leonardo Gabriel Grasel de Almeida", "Gabriel Dias Henz", "Jonathan William Silva dos Santos", "Gabriel Ferreira da Rosa", "Felipe Thomas Vargas de Souza", "Mateus Bueno dos Passos Teixeira", "Cássio Farias Machado", "Pablo da Luz Schlusen", "Daniel de Carvalho Figueiredo", "Otávio Fabrin Bubans", "Eduardo Dornel Ribas", "Anna Luisa de Oliveira", "Rodrigo Scheuer", "Arthur Lima de Souza", "Victor Oliveira", "Henrique Honaiser Ostermamm", "Mateus Ramos", "Matheus Augusto Schmitz", "Eliseu José Daroit Júnior", "Rafael Henrique da Silva", "Máicon Träsel Loebens", "Henrique Mentz", "Régis Martiny" });
+            //12/12 java 
+            listaEspelhosPassados.Add(new string[] { "Gabriel Ferreira da Rosa", "Arthur Lima de Souza", "Felipe Thomas Vargas de Souza", "Mateus Ramos", "Leonardo Gabriel Grasel de Almeida", "Daniel de Carvalho Figueiredo", "Henrique Mentz", "Gabriel Dias Henz", "Matheus Augusto Schmitz", "Jonathan William Silva dos Santos", "Pablo da Luz Schlusen", "Otávio Fabrin Bubans", "Cássio Farias Machado", "Eduardo Dornel Ribas", "Rodrigo Scheuer", "Máicon Träsel Loebens", "Henrique Honaiser Ostermamm", "Eliseu José Daroit Júnior", "Victor Oliveira", "Anna Luisa de Oliveira", "Rafael Henrique da Silva", "Mateus Bueno dos Passos Teixeira", "Régis Martiny" });
 
             var espelhoCreator = new EspelhoDeClasseCreator();
             var melhoresEspelhos = espelhoCreator.ObterMelhoresEspelhos(alunos, listaEspelhosPassados, FiltroCasosEspeciais);
@@ -67,15 +71,16 @@ namespace EspelhoDeClasse.Controllers
 
         private bool FiltroCasosEspeciais(string[] espelho)
         {
-            var posicaoJeniffer = Array.IndexOf(espelho, "Jeniffer da Silva Costa");
             var posicaoGabrielRosa = Array.IndexOf(espelho, "Gabriel Ferreira da Rosa");
             var leonardo = Array.IndexOf(espelho, "Leonardo Gabriel Grasel de Almeida");
+            var pablo = Array.IndexOf(espelho, "Pablo da Luz Schlusen");
 
-            //Devem ficar na primeira fileira
-            if (posicaoJeniffer > 5 || posicaoGabrielRosa > 5)
+            //Casos que possuem restrições, caso eles fiquem atrás dessas posições 
+            //o espelho deve ser descartado
+            if (posicaoGabrielRosa > 5)
                 return false;
 
-            if (leonardo > 11)
+            if (leonardo > 11 || pablo > 11)
                 return false;
 
             return true;
