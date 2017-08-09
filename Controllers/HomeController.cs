@@ -11,7 +11,7 @@ namespace EspelhoDeClasse.Controllers
     {
         public ActionResult Index()
         {
-            var alunos = new string[]
+            var alunosAtivos = new string[]
             {
                 "Alana Weiss",
                 "Alexia Pereira",
@@ -37,11 +37,11 @@ namespace EspelhoDeClasse.Controllers
                 "Rafael Barizon",
                 "Rafael Barreto",
                 "Tais Silva",
-                "William Goncalves"
+                "William Goncalves",
             };
 
             var listaEspelhosPassados = new List<string[]>();
- 
+
             //Angular
             listaEspelhosPassados.Add(new string[] { "Joao Silva", "Luis Robinson", "Diandra Rocha", "Tais Silva", "Jomar Cardoso", "Deordines Tomazi", "William Goncalves", "Alana Weiss", "Mirela Adam", "Leonardo Alves", "Rafael Barizon", "Leonardo Morais", "Camila Batista", "Lucas Damaceno", "Lucas Gaspar", "Mateus Silva", "Jabel Fontoura", "Bruno Aguiar", "Christopher Michel", "Lucas Muller", "Mathias Ody", "Maico Kley", "Claudia Moura", "Rafael Barreto", "Alexia Pereira" });
             //.NET
@@ -52,7 +52,7 @@ namespace EspelhoDeClasse.Controllers
             listaEspelhosPassados.Add(new string[] { "Tais Silva", "Rafael Barreto", "Jomar Cardoso", "Mirela Adam", "William Goncalves", "Deordines Tomazi", "Joao Silva", "Rafael Barizon", "Mateus Silva", "Alana Weiss", "Alexia Pereira", "Leonardo Morais", "Leonardo Alves", "Camila Batista", "Jabel Fontoura", "Christopher Michel", "Bruno Aguiar", "Mathias Ody", "Lucas Gaspar", "Lucas Muller", "Diandra Rocha", "Lucas Damaceno" });
 
             var espelhoCreator = new EspelhoDeClasseCreator();
-            var melhoresEspelhos = espelhoCreator.ObterMelhoresEspelhos(alunos, listaEspelhosPassados, FiltroCasosEspeciais);
+            var melhoresEspelhos = espelhoCreator.ObterMelhoresEspelhos(alunosAtivos, listaEspelhosPassados, FiltroCasosEspeciais);
 
             return View(melhoresEspelhos);
         }
