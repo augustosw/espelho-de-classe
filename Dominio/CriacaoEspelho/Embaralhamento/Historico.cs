@@ -15,7 +15,7 @@ namespace EspelhoDeClasse.Dominio
             //Monta a lista com o primeiro espelho (que tinha todos alunos) 
             //ou com o array de alunos passado caso seja o primeiro
             //Fazemos isso pois o array de alunos pode perder itens no futuro
-            var listaTodosAlunosExistentes = listaEspelhosRetroativos.First() ?? alunos;
+            var listaTodosAlunosExistentes = listaEspelhosRetroativos.FirstOrDefault() ?? alunos;
 
             InicializaDictionaryHistoricos(listaTodosAlunosExistentes);
 

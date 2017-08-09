@@ -34,8 +34,8 @@
 .posicao {
     width: 95px;
     height: 85px;
-    float: left;
-    margin: 10px;
+    display: inline-block;
+    margin: 8px;
 }
 
     .posicao.aluno {
@@ -68,9 +68,5 @@
 
 .ultima-fileira {
     text-align: center;
+    margin-right: 48px;
 }
-
-    .ultima-fileira .posicao.aluno {
-        display: inline-block;
-        float: none;
-    }

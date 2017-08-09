@@ -8,7 +8,7 @@ namespace EspelhoDeClasse.Dominio
 {
     public class EspelhoDeClasseCreator
     {
-        private const int QuantidadeEmbaralhamentos = 30000;
+        private const int QuantidadeEmbaralhamentos = 50000;
 
         public List<Espelho> ObterMelhoresEspelhos(string[] alunos, List<string[]> historicoDeEspelhos, Func<string[], bool> filtroCasosEspeciais)
         {
