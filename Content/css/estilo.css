@@ -48,12 +48,13 @@
         .posicao.aluno span {
             position: absolute;
             font-family: arial;
-            color: white;
-            font-size: 10px;
+            color: #31ff00;
+            font-weight: bold;
+            font-size: 12px;
             top: 60px;
             text-align: center;
             width: 100%;
-            text-shadow: 1px 2px 3px #666;
+            text-shadow: 1px 2px 3px #333;
         }
 
     .posicao > img {
