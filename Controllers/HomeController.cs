@@ -44,6 +44,8 @@ namespace EspelhoDeClasse.Controllers
 
             //Espelho OO
             listaEspelhosPassados.Add(new string[] { "Willian Velhos", "Steffano Heckler", "Luis Lima", "Viviane Machado", "Pablo Garcia", "Leonardo Bork", "Jacob Stein", "Natalia Silva", "Vitor Ramos", "Marcele Dorneles", "Victor Scherer", "Jessica Rocha", "Joao Fidellis", "Leandro Paz", "Pedro Rohr", "Bruno Hoffmann", "Julia Vila", "Mathias Voelcker", "Bel Cogo", "Willian Pazinatto", "Victor Damke", "Gustavo Rodrigues", "Alvaro Schmidt", "Francisco Mossi", "Luan Avila" });
+            //Espelho BD-I
+            listaEspelhosPassados.Add(new string[] { "Willian Velhos", "Luis Lima", "Joao Fidellis", "Luan Avila", "Natalia Silva", "Leonardo Bork", "Alvaro Schmidt", "Julia Vila", "Victor Damke", "Jessica Rocha", "Pablo Garcia", "Francisco Mossi", "Viviane Machado", "Marcele Dorneles", "Steffano Heckler", "Mathias Voelcker", "Jacob Stein", "Victor Scherer", "Bel Cogo", "Pedro Rohr", "Vitor Ramos", "Bruno Hoffmann", "Gustavo Rodrigues", "Leandro Paz", "Willian Pazinatto"});
 
             var espelhoCreator = new EspelhoDeClasseCreator();
             var melhoresEspelhos = espelhoCreator.ObterMelhoresEspelhos(alunosAtivos, listaEspelhosPassados, FiltroCasosEspeciais);
