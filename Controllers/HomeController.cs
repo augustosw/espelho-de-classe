@@ -25,7 +25,7 @@ namespace EspelhoDeClasse.Controllers
                 "Leandro Paz",
                 "Leonardo Bork",
                 "Luan Avila",
-                "Luis Lima",
+                //"Luis Lima",
                 "Marcele Dorneles",
                 "Mathias Voelcker",
                 "Natalia Silva",
@@ -48,6 +48,8 @@ namespace EspelhoDeClasse.Controllers
             listaEspelhosPassados.Add(new string[] { "Willian Velhos", "Luis Lima", "Joao Fidellis", "Luan Avila", "Natalia Silva", "Leonardo Bork", "Alvaro Schmidt", "Julia Vila", "Victor Damke", "Jessica Rocha", "Pablo Garcia", "Francisco Mossi", "Viviane Machado", "Marcele Dorneles", "Steffano Heckler", "Mathias Voelcker", "Jacob Stein", "Victor Scherer", "Bel Cogo", "Pedro Rohr", "Vitor Ramos", "Bruno Hoffmann", "Gustavo Rodrigues", "Leandro Paz", "Willian Pazinatto" });
             //Espelho HTML-CSS
             listaEspelhosPassados.Add(new string[] { "Willian Velhos", "Bel Cogo", "Vitor Ramos", "Luis Lima", "Jacob Stein", "Leonardo Bork", "Jessica Rocha", "Bruno Hoffmann", "Leandro Paz", "Julia Vila", "Willian Pazinatto", "Luan Avila", "Viviane Machado", "Alvaro Schmidt", "Marcele Dorneles", "Steffano Heckler", "Natalia Silva", "Pablo Garcia", "Mathias Voelcker", "Francisco Mossi", "Victor Scherer", "Joao Fidellis", "Victor Damke", "Pedro Rohr", "Gustavo Rodrigues" });
+            //Espelho JS
+            listaEspelhosPassados.Add(new string[] { "Willian Velhos", "Luan Avila", "Leonardo Bork", "Willian Pazinatto", "Viviane Machado", "Victor Damke", "Bruno Hoffmann", "Marcele Dorneles", "Pedro Rohr", "Joao Fidellis", "Gustavo Rodrigues", "Jessica Rocha", "Pablo Garcia", "Jacob Stein", "Francisco Mossi", "Leandro Paz", "Victor Scherer", "Steffano Heckler", "Vitor Ramos", "Julia Vila", "Bel Cogo", "Alvaro Schmidt", "Natalia Silva", "Mathias Voelcker" });
 
             var espelhoCreator = new EspelhoDeClasseCreator();
             var melhoresEspelhos = espelhoCreator.ObterMelhoresEspelhos(alunosAtivos, listaEspelhosPassados, FiltroCasosEspeciais);
@@ -58,8 +60,6 @@ namespace EspelhoDeClasse.Controllers
         private bool FiltroCasosEspeciais(string[] espelho)
         {
             var posicaoLeonardo = Array.IndexOf(espelho, "Leonardo Bork");
-            var posicaoLuis = Array.IndexOf(espelho, "Luis Lima");
-            var posicaoWillian = Array.IndexOf(espelho, "Willian Velhos");
 
             var primeiraFileira = 5;
             ////var segundaFileira = 11;
@@ -67,10 +67,7 @@ namespace EspelhoDeClasse.Controllers
 
             //////Casos que possuem restrições, caso eles fiquem atrás dessas posições 
             //////o espelho deve ser descartado
-            if (posicaoLeonardo > primeiraFileira || posicaoLuis > primeiraFileira)
-                return false;
-
-            if (posicaoWillian != 0)
+            if (posicaoLeonardo > primeiraFileira)
                 return false;
 
             return true;
