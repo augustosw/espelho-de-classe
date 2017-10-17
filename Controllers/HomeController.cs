@@ -50,6 +50,8 @@ namespace EspelhoDeClasse.Controllers
             listaEspelhosPassados.Add(new string[] { "Willian Velhos", "Bel Cogo", "Vitor Ramos", "Luis Lima", "Jacob Stein", "Leonardo Bork", "Jessica Rocha", "Bruno Hoffmann", "Leandro Paz", "Julia Vila", "Willian Pazinatto", "Luan Avila", "Viviane Machado", "Alvaro Schmidt", "Marcele Dorneles", "Steffano Heckler", "Natalia Silva", "Pablo Garcia", "Mathias Voelcker", "Francisco Mossi", "Victor Scherer", "Joao Fidellis", "Victor Damke", "Pedro Rohr", "Gustavo Rodrigues" });
             //Espelho JS
             listaEspelhosPassados.Add(new string[] { "Willian Velhos", "Luan Avila", "Leonardo Bork", "Willian Pazinatto", "Viviane Machado", "Victor Damke", "Bruno Hoffmann", "Marcele Dorneles", "Pedro Rohr", "Joao Fidellis", "Gustavo Rodrigues", "Jessica Rocha", "Pablo Garcia", "Jacob Stein", "Francisco Mossi", "Leandro Paz", "Victor Scherer", "Steffano Heckler", "Vitor Ramos", "Julia Vila", "Bel Cogo", "Alvaro Schmidt", "Natalia Silva", "Mathias Voelcker" });
+            //Espelho AngularJS
+            listaEspelhosPassados.Add(new string[] { "Leonardo Bork", "Steffano Heckler", "Bruno Hoffmann", "Willian Pazinatto", "Jessica Rocha", "Julia Vila", "Vitor Ramos", "Alvaro Schmidt", "Victor Scherer", "Victor Damke", "Mathias Voelcker", "Pedro Rohr", "Marcele Dorneles", "Bel Cogo", "Francisco Mossi", "Gustavo Rodrigues", "Jacob Stein", "Joao Fidellis", "Pablo Garcia", "Luan Avila", "Viviane Machado", "Natalia Silva", "Willian Velhos", "Leandro Paz" });
 
             var espelhoCreator = new EspelhoDeClasseCreator();
             var melhoresEspelhos = espelhoCreator.ObterMelhoresEspelhos(alunosAtivos, listaEspelhosPassados, FiltroCasosEspeciais);
